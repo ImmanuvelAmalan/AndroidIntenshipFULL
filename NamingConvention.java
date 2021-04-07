@@ -1,3 +1,4 @@
+package mypack;
 interface Bike{ // Interface with single word
 	void brand();
 }

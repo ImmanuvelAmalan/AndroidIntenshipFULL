@@ -1,4 +1,3 @@
-package myclass;
 interface LivingThings{              // ABSTRACTION
     public boolean isLivingThing();
     public boolean isNotLivingthing();
@@ -26,7 +25,8 @@ class Animals implements LivingThings{           // CLASS
 }
 class Human extends Animals{     // INHERITANCE
     public String getName() {     // POLYMORPHISM - OVERRIDING
-        return name;
+        System.out.print("GJ");
+		return null;
     }
     public void setName(String name) {   
         this.name=name;
@@ -34,7 +34,7 @@ class Human extends Animals{     // INHERITANCE
 }
 class OopsConcepts{
     public static void main(String[] args) {
-        Human human=new Human();    // OBJECTS
+        Animals human=new Human();    // OBJECTS
         human.setName("Immanuvel");
         System.out.println("Name: "+human.getName());
         human.eat("Pizza","Biriyani");

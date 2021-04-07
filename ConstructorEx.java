@@ -1,6 +1,6 @@
 class ConstructorDemo{
 	// Default Constructor
-	public  ConstructorDemo()
+	public ConstructorDemo()
 	{
 	System.out.println("Default Constructor");
 	}

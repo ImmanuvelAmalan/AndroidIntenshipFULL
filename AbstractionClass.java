@@ -2,7 +2,7 @@ interface VehicleType{             // Abstraction using Interface
     public void car();
     public void bike();
 }
-abstract class Vehicle implements VehicleType{     // Abstraction using abstract class
+abstract class Vehicle{     // Abstraction using abstract class
     protected int gear=0;
     public abstract void speedUp();
     public void speedDown(){
@@ -14,7 +14,7 @@ abstract class Vehicle implements VehicleType{     // Abstraction using abstract
         System.out.println("Downing the speed.. Gear:"+gear);
     }}
 }
-class AbstractionClass extends Vehicle{
+class AbstractionClass extends Vehicle implements VehicleType{
     public void car() {                                      
         System.out.println("Vehicle Type: Car");
     }
@@ -25,6 +25,10 @@ class AbstractionClass extends Vehicle{
         gear+=1;
         System.out.println("Speed Up.. Gear:"+gear);
     }
+	public void speedDown(){
+        
+        System.out.println("HELLO "+gear);
+    }
     public static void main(String[] args) {
         AbstractionClass car=new AbstractionClass();
         car.speedDown();
@@ -33,5 +37,4 @@ class AbstractionClass extends Vehicle{
         car.speedDown();
         car.car();
     }
-
 }

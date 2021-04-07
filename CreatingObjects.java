@@ -6,7 +6,7 @@ class CreatingObjects implements Cloneable{
         Class cl = Class.forName("myclass.CreatingObjects");                 //  Creating object using newInstance()
         CreatingObjects object2=(CreatingObjects) cl.newInstance();         //
         CreatingObjects object3=(CreatingObjects) object1.clone(); // Creating object using clone interface    
-	Constructor<CreatingObjects> cons= CreatingObjects.class.getDeclaredConstructor();  //
+		Constructor<CreatingObjects> cons= CreatingObjects.class.getDeclaredConstructor();  //
         CreatingObjects object4=cons.newInstance();                                        //  Creating object using Constructor class
            
         
